@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -10,6 +11,19 @@
     <RootNamespace>XHVersion</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>XHVersion</AssemblyName>
+    <PackOnBuild>true</PackOnBuild>
+    <PackageId>Xamarin.iOS.XHVersion</PackageId>
+    <PackageVersion>1.0.2</PackageVersion>
+    <Authors>WenfengCheng</Authors>
+    <NeutralLanguage>en</NeutralLanguage>
+    <PackageLicenseUrl>https://opensource.org/licenses/MIT</PackageLicenseUrl>
+    <Owners>WenfengCheng, Funky_Xamarin</Owners>
+    <PackageProjectUrl>https://github.com/Wenfengcheng/XHVersion_Xamarin.iOS</PackageProjectUrl>
+    <PackageReleaseNotes>Update default alert style and release new nuget</PackageReleaseNotes>
+    <Summary>Xamarin.iOS Binding Library - XHVersion</Summary>
+    <PackageTags>Xamarin.iOS,  Xamarin, Update, AppStore, Alert</PackageTags>
+    <Title>Funky - XHVersion</Title>
+    <Description>Notify user when a new version of your app is available.</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -59,6 +73,8 @@
     <BundleResource Include="Resources\XHVersion.bundle\VersionUpdate_Cancel%403x.png" />
     <BundleResource Include="Resources\XHVersion.bundle\VersionUpdate_Icon%402x.png" />
     <BundleResource Include="Resources\XHVersion.bundle\VersionUpdate_Icon%403x.png" />
+    <BundleResource Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.2\build\NuGet.Build.Packaging.targets')" />
 </Project>
