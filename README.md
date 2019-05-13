@@ -1,2 +1,29 @@
 # XHVersion_Xamarin.iOS
-Xamarin.iOS binding library for XHVersion
+
+[![Version Status](https://img.shields.io/cocoapods/v/XHVersion.svg?style=flat)](http://cocoadocs.org/docsets/XHVersion)
+
+### Notify users when a new version of your app is available and prompt them to upgrade.
+
+Port of Xamarin iOS of the [XHVersion](https://github.com/Wenfengcheng/XHVersion)
+
+### Overview
+
+<img src="./ScreenShot/1.gif" height="480">
+
+### Usage
+To alert new version with default style:
+```
+XHVersion.XHVersion.CheckNewVersion();
+```
+
+To alert new version with custom ui:
+```
+XHVersion.XHVersion.checkNewVersionAndCustomAlert((info)=>{
+
+});
+```
+
+### Reference
+
+- [XHVersion](https://github.com/CoderZhuXH/XHVersion)
+- [一句话实现iOS版本更新提示](https://github.com/RockChanel/SELUpdateAlert)
