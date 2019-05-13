@@ -1,0 +1,6 @@
+framework module XHVersion {
+  umbrella header "XHVersion-umbrella.h"
+
+  export *
+  module * { export * }
+}
