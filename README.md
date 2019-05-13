@@ -2,9 +2,14 @@
 
 [![Version Status](https://img.shields.io/cocoapods/v/XHVersion.svg?style=flat)](http://cocoadocs.org/docsets/XHVersion)
 
-### Notify users when a new version of your app is available and prompt them to upgrade.
+## Notify users when a new version of your app is available and prompt them to upgrade.
 
 Port of Xamarin iOS of the [XHVersion](https://github.com/Wenfengcheng/XHVersion)
+
+
+## NuGet
+
+* [Xamarin.iOS.XHVersion](https://www.nuget.org/packages/Xamarin.iOS.XHVersion) [![NuGet](https://img.shields.io/nuget/v/Xamarin.iOS.XHVersion.svg?label=NuGet)](https://www.nuget.org/packages/Xamarin.iOS.XHVersion)
 
 ### Overview
 
